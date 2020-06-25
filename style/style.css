@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&family=Open+Sans&display=swap');
+
+a,h1,h2,h3,h4,h5 {
+  text-transform: uppercase;
+  font-family: 'Lato', sans-serif;
+}
+
+.navbar {
+  padding: 20px;
+  letter-spacing: 1px;
+}
+
+.nav-link {
+  padding: 15px !important;
+  font-size: 12px;
+  font-weight: 600;
+  color: #FFF !important;
+}
+.active > .nav-link {
+  color: #FCAC45 !important;
+}
+.navbar-brand {
+  font-size: 22px;
+  font-weight: bold;
+}
+
+
+header {
+  height: 100vh;
+  background-image: linear-gradient(to bottom, rgba(0,0,0,0.8) 0%,rgba(0,0,0,0.73) 17%,rgba(0,0,0,0.66) 35%,rgba(0,0,0,0.55) 62%,rgba(0,0,0,0.4) 100%), url('../img/01.jpg');
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.fas {
+  color: #fff;
+  font-size: 1.2em;
+}
+.ico {
+  width: 50px;
+  height: 50px;
+  border: 1px solid #fff;
+  border-radius: 50%;
+  transition: all .4s;
+}
+.ico:hover {
+  background-color: #FCAC45;
+  border: 1px solid #FCAC45;
+}
+#home {
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
