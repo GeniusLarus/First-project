@@ -4,7 +4,12 @@ a,h1,h2,h3,h4,h5 {
   text-transform: uppercase;
   font-family: 'Lato', sans-serif;
 }
-
+p {
+  font-family: 'Open Sans', sans-serif;
+}
+strong {
+  font-weight: 900;
+}
 .navbar {
   padding: 20px;
   letter-spacing: 1px;
@@ -21,13 +26,12 @@ a,h1,h2,h3,h4,h5 {
 }
 .navbar-brand {
   font-size: 22px;
-  font-weight: bold;
+  font-weight: 900;
 }
 
-
 header {
-  height: 100vh;
-  background-image: linear-gradient(to bottom, rgba(0,0,0,0.8) 0%,rgba(0,0,0,0.73) 17%,rgba(0,0,0,0.66) 35%,rgba(0,0,0,0.55) 62%,rgba(0,0,0,0.4) 100%), url('../img/01.jpg');
+  height: 100%;
+  background-image: linear-gradient(to bottom, rgba(0,0,0,0.8) 0%, rgba(0, 0, 0, 0.73) 17%,rgba(0,0,0,0.66) 35%,rgba(0,0,0,0.55) 62%,rgba(0,0,0,0.4) 100%), url('../img/01.jpg');
   background-position: center;
   background-attachment: fixed;
   background-size: cover;
@@ -38,9 +42,10 @@ header {
   font-size: 1.2em;
 }
 .ico {
+  align-self: center;
   width: 50px;
   height: 50px;
-  border: 1px solid #fff;
+  border: 2px solid #b4b4b4;
   border-radius: 50%;
   transition: all .4s;
 }
@@ -49,8 +54,21 @@ header {
   border: 1px solid #FCAC45;
 }
 #home {
-  color: #fff;
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding: 15% 0;
+  text-align: center;
+}
+#home > h1 {
+  font-size: 36px;
+  color: #CFCFCF;
+}
+#home > h1 > strong {
+  color: #FCAC45;
+}
+#home > p {
+  color: #E3E3E3;
+  font-size: 21px;
+  font-weight: 100;
 }
