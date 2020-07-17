@@ -5,39 +5,41 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>First Bootstrap Project</title>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-  <link rel="stylesheet" type="text/css" href="style/style.css">
   <link rel="stylesheet" href="fonts/faw/css/all.css">
+  <link rel="stylesheet" href="style/owl.carousel.min.css">
+  <link rel="stylesheet" href="style/owl.theme.default.min.css">
+  <link rel="stylesheet" type="text/css" href="style/style.css">
 </head>
 <body>
   <header class="d-flex flex-column justify-content-center pb-5">
-    <nav class="navbar navbar-expand-lg navbar-dark">
+    <nav class="navbar sticky-top navbar-expand-lg navbar-dark">
       <div class="container p-0">
-        <a href="#home" class="navbar-brand"><strong>Spirit8</strong></a>
+        <a href="index.html" class="navbar-brand"><strong>Spirit8</strong></a>
         <button class="navbar-toggler" type="button" aria-expanded="false" data-toggle='collapse' aria-label='Navbar button' data-target='#navbarBtns' aria-controls="navbarBtns">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id='navbarBtns'>
           <ul class="navbar-nav ml-auto">
             <li class="nav-item active">
-              <a href="#home" class="nav-link">Home</a>
+              <a href="#home" class="nav-link">Home <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
-              <a href="#" class="nav-link">About</a>
+              <a href="#about" class="nav-link">About</a>
             </li>
             <li class="nav-item">
-              <a href="#" class="nav-link">Team</a>
+              <a href="#team" class="nav-link">Team</a>
             </li>
             <li class="nav-item">
-              <a href="#" class="nav-link">Services</a>
+              <a href="#services" class="nav-link">Services</a>
             </li>
             <li class="nav-item">
-              <a href="#" class="nav-link">Portfolio</a>
+              <a href="#portfolio" class="nav-link">Portfolio</a>
             </li>
             <li class="nav-item">
-              <a href="#" class="nav-link">Testimonials</a>
+              <a href="#testimonials" class="nav-link">Testimonials</a>
             </li>
             <li class="nav-item">
-              <a href="#" class="nav-link">Contact</a>
+              <a href="#contacts" class="nav-link">Contact</a>
             </li>
           </ul>
         </div>
@@ -47,10 +49,266 @@
       <h1>welcome on <strong class="bold">spirit8</strong></h1>
       <p>We are a digital agency with <strong>years of experience</strong> and with <strong>extraordinary people</strong></p>
     </div>
-    <div class="ico d-flex align-items-center justify-content-center"><i class="fas fa-chevron-down"></i></div>
+    <a href="#about" class="ico d-flex align-items-center justify-content-center"><i class="fas fa-chevron-down"></i></a>
   </header>
+  <div class="container" id="about">
+    <div class="row">
+      <div class="col-md-6">
+        <img src="img/02.png" id="aboutImg" alt="About us">
+      </div>
+      <div class="col-md-6 d-flex flex-column justify-content-start">
+        <h4>about us</h4>
+        <h2>some words <strong>about us</strong></h2>
+        <div id="hrWrap"><hr class="primaryLine"></div>
+        <p class="pt-4 pb-3">We love building and rebuilding brands through our specific skills. Using colour, fonts, and illustration, we brand companies in a way they will never forget.</p>
+        <ul id="about-list">
+          <li>
+            <i class="far fa-dot-circle"></i>
+            <strong>Mission</strong> - <em>We deliver uniqueness and quality</em>
+          </li>
+          <li>
+            <i class="far fa-dot-circle"></i>
+            <strong>Skills</strong> - <em>Delivering fast and excellent results</em>
+          </li>
+          <li>
+            <i class="far fa-dot-circle"></i>
+            <strong>Clients</strong> - <em>Satisfied clients thanks to our experience</em>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="parallaxBlock" id="team">
+    <h2>Meet <strong>our team</strong></h2>
+    <hr class="primaryLine">
+    <hr class="secondaryLine">
+    <div class="container owl-carousel owl-theme" id="teamCarousel">
+      <div class="owl-carousel-item">
+        <img src="img/team/01.jpg" alt="team" class="imgCircle">
+        <h3>Jenn Gwappa</h3>
+        <p>CEO / Founder</p>
+        <p>Do not seek to change what has come before. Seek to create that which has not.</p>
+      </div>
+      <div class="owl-carousel-item">
+        <img src="img/team/02.jpg" alt="team" class="imgCircle">
+        <h3>Jenn Gwappa</h3>
+        <p>CEO / Founder</p>
+        <p>Do not seek to change what has come before. Seek to create that which has not.</p>
+      </div>
+      <div class="owl-carousel-item">
+        <img src="img/team/03.jpg" alt="team" class="imgCircle">
+        <h3>Jenn Gwappa</h3>
+        <p>CEO / Founder</p>
+        <p>Do not seek to change what has come before. Seek to create that which has not.</p>
+      </div>
+      <div class="owl-carousel-item">
+        <img src="img/team/04.jpg" alt="team" class="imgCircle">
+        <h3>Jenn Gwappa</h3>
+        <p>CEO / Founder</p>
+        <p>Do not seek to change what has come before. Seek to create that which has not.</p>
+      </div>
+      <div class="owl-carousel-item">
+        <img src="img/team/04.jpg" alt="team" class="imgCircle">
+        <h3>Jenn Gwappa</h3>
+        <p>CEO / Founder</p>
+        <p>Do not seek to change what has come before. Seek to create that which has not.</p>
+      </div>
+      <div class="owl-carousel-item">
+        <img src="img/team/01.jpg" alt="team" class="imgCircle">
+        <h3>Jenn Gwappa</h3>
+        <p>CEO / Founder</p>
+        <p>Do not seek to change what has come before. Seek to create that which has not.</p>
+      </div>
+      <div class="owl-carousel-item">
+        <img src="img/team/02.jpg" alt="team" class="imgCircle">
+        <h3>Jenn Gwappa</h3>
+        <p>CEO / Founder</p>
+        <p>Do not seek to change what has come before. Seek to create that which has not.</p>
+      </div>
+      <div class="owl-carousel-item">
+        <img src="img/team/03.jpg" alt="team" class="imgCircle">
+        <h3>Jenn Gwappa</h3>
+        <p>CEO / Founder</p>
+        <p>Do not seek to change what has come before. Seek to create that which has not.</p>
+      </div>
+    </div>
+  </div>
+  <div class="container d-flex flex-column text-center align-items-center" id="services">
+    <h2>take a look at <strong>our services</strong></h2>
+    <hr class="primaryLine">
+    <hr class="secondaryLine">
+    <em class="mainSmall">Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum"
+      (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics,
+      very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..",
+      comes from a line in section 1.10.32.</em>
+    <div class="row">
+      <div class="col-md-3 d-flex flex-column align-items-center services-item">
+        <div class="services-fa"><i class="fas fa-desktop"></i></div>
+        <strong>WEB DESIGN</strong>
+        <p>The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.</p>
+      </div>
+      <div class="col-md-3 d-flex flex-column align-items-center services-item">
+        <div class="services-fa"><i class="fas fa-mobile-alt"></i></div>
+        <strong>MOBILE APPS</strong>
+        <p>The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.</p>
+      </div>
+      <div class="col-md-3 d-flex flex-column align-items-center services-item">
+        <div class="services-fa"><i class="fas fa-camera"></i></div>
+        <strong>PHOTOGRAPHY</strong>
+        <p>The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.</p>
+      </div>
+      <div class="col-md-3 d-flex flex-column align-items-center services-item">
+        <div class="services-fa"><i class="fas fa-bullhorn"></i></div>
+        <strong>MARKETING</strong>
+        <p>The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.</p>
+      </div>
+    </div>
+  </div>
+  <div class="parallaxBlock text-center" id="clients">
+    <h2>some of <strong>our clients</strong></h2>
+    <hr class="primaryLine">
+    <hr class="secondaryLine">
+    <div class="container owl-carousel owl-theme" id="clientsContainer">
+      <div class="clients-carousel-item"><img src="img/client/01.png" alt="clients"></div>
+      <div class="clients-carousel-item"><img src="img/client/02.png" alt="clients"></div>
+      <div class="clients-carousel-item"><img src="img/client/03.png" alt="clients"></div>
+      <div class="clients-carousel-item"><img src="img/client/04.png" alt="clients"></div>
+      <div class="clients-carousel-item"><img src="img/client/05.png" alt="clients"></div>
+      <div class="clients-carousel-item"><img src="img/client/06.png" alt="clients"></div>
+      <div class="clients-carousel-item"><img src="img/client/07.png" alt="clients"></div>
+    </div>
+  </div>
+  <div class="container d-flex flex-column justify-content-center align-items-center text-center" id="portfolio">
+    <h2>take a look at <strong>our portfolio</strong></h2>
+    <hr class="primaryLine">
+    <hr class="secondaryLine">
+    <em class="mainSmall">Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum"
+      (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the
+      theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum,
+      "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.</em>
+    <div class="clearfix w-100">
+      <h4 class="float-left">filter by type:</h4>
+      <ul class="float-right" id="filter">
+        <li class="active"><a href="#">All</a></li>
+        <li class=""><a href="#">Web Design</a></li>
+        <li class=""><a href="#">Photography</a></li>
+        <li class=""><a href="#">Mobile App</a></li>
+        <li class=""><a href="#">Branding</a></li>
+      </ul>
+    </div>
+    <div class="row">
+      <div class="col-md-3 col-sm-6">
+        <div class="portfolio-item">
+          <img src="img/portfolio/01.jpg" alt="">
+        </div>
+      </div>
+        <div class="col-md-3 col-sm-6">
+            <div class="portfolio-item">
+                <img src="img/portfolio/02.jpg" alt="">
+            </div>
+        </div>
+        <div class="col-md-3 col-sm-6">
+            <div class="portfolio-item">
+                <img src="img/portfolio/03.jpg" alt="">
+            </div>
+        </div>
+        <div class="col-md-3 col-sm-6">
+            <div class="portfolio-item">
+                <img src="img/portfolio/04.jpg" alt="">
+            </div>
+        </div>
+        <div class="col-md-3 col-sm-6">
+            <div class="portfolio-item">
+                <img src="img/portfolio/05.jpg" alt="">
+            </div>
+        </div>
+        <div class="col-md-3 col-sm-6">
+            <div class="portfolio-item">
+                <img src="img/portfolio/06.jpg" alt="">
+            </div>
+        </div>
+        <div class="col-md-3 col-sm-6">
+            <div class="portfolio-item">
+                <img src="img/portfolio/07.jpg" alt="">
+            </div>
+        </div>
+        <div class="col-md-3 col-sm-6">
+            <div class="portfolio-item">
+                <img src="img/portfolio/08.jpg" alt="">
+            </div>
+        </div>
+    </div>
+  </div>
+  <div class="parallaxBlock text-center" id="testimonials">
+      <h2><strong>our clients</strong> testimonials</h2>
+      <hr class="primaryLine">
+      <hr class="secondaryLine">
+      <div class="container owl-carousel owl-theme" id="testimonialsCarousel">
+          <div class="testimonials-carousel-items">
+              <h5>This book is a treatise on the theory of ethics, very popular during the Renaissance.
+                  The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..",
+                  comes from a line in section 1.10.32.</h5>
+              <p><strong>Dean Martin</strong>, CEO Acme Inc.</p>
+          </div>
+          <div class="testimonials-carousel-items">
+              <h5>This book is a treatise on the theory of ethics, very popular during the Renaissance.
+                  The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..",
+                  comes from a line in section 1.10.32.</h5>
+              <p><strong>Dean Martin</strong>, CEO Acme Inc.</p>
+          </div>
+          <div class="testimonials-carousel-items">
+              <h5>This book is a treatise on the theory of ethics, very popular during the Renaissance.
+                  The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..",
+                  comes from a line in section 1.10.32.</h5>
+              <p><strong>Dean Martin</strong>, CEO Acme Inc.</p>
+          </div>
+      </div>
+  </div>
+  <div class="container d-flex flex-column text-center align-items-center" id="contacts">
+    <h2>feel free to <strong>contact us</strong></h2>
+    <hr class="primaryLine">
+    <hr class="secondaryLine">
+    <em class="mainSmall">Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum"
+      (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics,
+      very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..",
+      comes from a line in section 1.10.32.</em>
+    <div class="row">
+      <div class="col-md-6">
+        <div class="form">
+          <label for="email">Email address</label>
+          <input type="email" id="email" placeholder="Enter email">
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="form">
+          <label for="password">Password</label>
+          <input type="password" id="password" placeholder="Password">
+        </div>
+      </div>
+    </div>
+    <div class="form">
+      <label for="textarea">Message</label>
+      <textarea name="textarea" id="textarea" rows="5"></textarea>
+    </div>
+    <button id="submitButton" type="submit">submit</button>
+  </div>
+  <footer>
+    <div class="container d-flex justify-content-between align-items-center">
+      <p class="">ALL RIGHTS RESERVED. COPYRIGHT © 2020. Designed by Robert Berki and Coded by Markevich Roman</p>
+      <div class="">
+        <div class="d-flex justify-content-center align-items-center">
+        <a href="#" class="footer-icons"><i class="fab fa-facebook-f"></i></a>
+        <a href="#" class="footer-icons"><i class="fab fa-dribbble"></i></a>
+        <a href="#" class="footer-icons"><i class="fab fa-google-plus-g"></i></a>
+        <a href="#" class="footer-icons"><i class="fab fa-twitter"></i></a>
+        </div>
+      </div>
+    </div>
+  </footer>
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+  <script src="js/owl.carousel.min.js"></script>
+  <script src="js/main.js"></script>
 </body>
 </html>

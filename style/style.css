@@ -1,20 +1,53 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&family=Open+Sans&display=swap');
 
+/*!!!!!!!!!!!!!!!!!!!!!!!! General properties !!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+* {
+  outline: none !important;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+html {
+  scroll-behavior: smooth;
+}
 a,h1,h2,h3,h4,h5 {
-  text-transform: uppercase;
   font-family: 'Lato', sans-serif;
+}
+a,h1,h2,h4 {
+  text-transform: uppercase;
+}
+h5 {
+  text-transform: uppercase;
+  font-weight: 700;
+  line-height: 20px;
+}
+h2 {
+  font-weight: 300;
+}
+h2 > strong {
+  font-weight: bold;
 }
 p {
   font-family: 'Open Sans', sans-serif;
 }
-strong {
-  font-weight: 900;
+img {
+  vertical-align: middle;
 }
+strong {
+  font-weight: 700;
+  font-family: 'Lato', sans-serif;
+}
+a:hover {
+  text-decoration: none;
+}
+
+/*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+
+/*!!!!!!!!!!!!!!!!!!!!!! Navbar !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
 .navbar {
   padding: 20px;
   letter-spacing: 1px;
 }
-
 .nav-link {
   padding: 15px !important;
   font-size: 12px;
@@ -28,18 +61,58 @@ strong {
   font-size: 22px;
   font-weight: 900;
 }
+/*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
 
-header {
+
+
+.parallaxBlock {
   height: 100%;
-  background-image: linear-gradient(to bottom, rgba(0,0,0,0.8) 0%, rgba(0, 0, 0, 0.73) 17%,rgba(0,0,0,0.66) 35%,rgba(0,0,0,0.55) 62%,rgba(0,0,0,0.4) 100%), url('../img/01.jpg');
+  width: 100%;
+  padding: 80px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   background-position: center;
   background-attachment: fixed;
   background-size: cover;
   background-repeat: no-repeat;
 }
-.fas {
-  color: #fff;
-  font-size: 1.2em;
+.parallaxBlock h2 {
+  color: #fff !important;
+  font-weight: 300;
+  font-size: 30px;
+}
+.primaryLine {
+  border: none;
+  height: 4px;
+  width: 60px;
+  margin: 0;
+  background-color: #FCAC45;
+}
+.secondaryLine {
+  background-color: rgba(252, 172, 69, 0.34);
+  border: none;
+  height: 4px;
+  width: 40px;
+  margin: 10px 0 20px;
+}
+.mainSmall {
+  font-size: 12px;
+  margin-bottom: 50px;
+}
+
+
+
+/*!!!!!!!!!!!!!!!!!!!!!!!! Banner !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+
+header {
+  height: 100%;
+  width: 100%;
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: linear-gradient(to bottom, rgba(0,0,0,0.8) 0%, rgba(0, 0, 0, 0.73) 17%,rgba(0,0,0,0.66) 35%,rgba(0,0,0,0.55) 62%,rgba(0,0,0,0.4) 100%), url('../img/01.jpg');
 }
 .ico {
   align-self: center;
@@ -48,9 +121,12 @@ header {
   border: 2px solid #b4b4b4;
   border-radius: 50%;
   transition: all .4s;
+  color: #fff;
+  font-size: 1.2em;
 }
 .ico:hover {
   background-color: #FCAC45;
+  color: #fff !important;
   border: 1px solid #FCAC45;
 }
 #home {
@@ -71,4 +147,227 @@ header {
   color: #E3E3E3;
   font-size: 21px;
   font-weight: 100;
+}
+
+/*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+
+/*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! About Block !!!!!!!!!!!!!!!!!!!!!!*/
+#about, #services, #portfolio, #contacts {
+  width: 100%;
+  padding: 80px 10px;
+  color: #5A5A5A;
+}
+#about-list {
+  padding: 0;
+  list-style: none;
+}
+#about-list > li {
+  line-height: 32px;
+}
+#aboutImg {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+#hrWrap {
+  max-width: 60px;
+}
+/*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+
+/*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! Team Block !!!!!!!!!!!!!!!!!!!!!!!!*/
+
+#team {
+  background-image: linear-gradient(to bottom, rgba(0,0,0,0.8) 0%, rgba(0, 0, 0, 0.73) 17%,rgba(0,0,0,0.66) 35%,rgba(0,0,0,0.55) 62%,rgba(0,0,0,0.4) 100%), url('../img/03.jpg');
+}
+.imgCircle {
+  height: 120px;
+  width: 120px !important;
+  border: 4px solid transparent;
+  border-radius: 50%;
+  transition: all .5s;
+}
+.owl-carousel-item {
+  padding: 4px;
+  color: #f2f2f2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  transition: all .5s;
+}
+.owl-carousel-item:hover .imgCircle {
+  transition: all .5s;
+  border-color: #FCAC45;
+}
+.owl-carousel-item > h3 {
+  font-size: 18px;
+  margin: 20px 0 10px;
+}
+.owl-carousel-item > p {
+  font-size: 14px;
+  margin: 0 0 10px;
+}
+
+/*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! Services !!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+.services-item:hover .services-fa {
+  background-color: #FCAC45;
+  color: #FFFFFF;
+  transition: all .4s;
+}
+.services-fa {
+  width: 100px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 36px;
+  border: 4px solid #FCAC45;
+  border-radius: 50%;
+  transition: all .4s;
+}
+.services-fa ~ strong {
+  font-size: 18px;
+  padding: 15px 0 10px;
+}
+.services-fa ~ p {
+  font-size: 14px;
+}
+
+/*!!!!!!!!!!!!!!!!!!!!!!Clients!!!!!!!!!!!!!!!!!!*/
+
+#clients {
+  background-image: linear-gradient(to bottom, rgba(0,0,0,0.8) 0%, rgba(0, 0, 0, 0.73) 17%,rgba(0,0,0,0.66) 35%,rgba(0,0,0,0.55) 62%,rgba(0,0,0,0.4) 100%), url('../img/04.jpg');
+}
+.clients-carousel-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.clients-carousel-item > img {
+  width: 40% !important;
+  margin: 35px;
+  vertical-align: middle;
+  height: auto;
+}
+#clientsContainer > .owl-dots {
+  margin: 0;
+}
+
+/*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+
+/*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!Portfolio!!!!!!!!!!!!!!!!!!!*/
+#filter {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+  font-family: 'Lato', sans-serif;
+}
+#filter a {
+  text-transform: none !important;
+  color: #222222;
+}
+#filter .active {
+  font-weight: bold;
+}
+#filter li:not(:first-child):before {
+  content: '|';
+  color: #5A5A5A;
+  padding: 0 20px;
+}
+.portfolio-item {
+  margin-bottom: 30px;
+}
+.portfolio-item img {
+  max-width: 100%;
+  height: auto;
+}
+/*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+
+/*!!!!!!!!!!!!!!!!!!!!!Testimonials!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+#testimonials {
+  background-image: linear-gradient(to bottom, rgba(0,0,0,0.8) 0%, rgba(0, 0, 0, 0.73) 17%,rgba(0,0,0,0.66) 35%,rgba(0,0,0,0.55) 62%,rgba(0,0,0,0.4) 100%), url('../img/05.jpg');
+}
+#testimonialsCarousel {
+  width: 750px;
+}
+.testimonials-carousel-items {
+  color: #FFFFFF;
+  font-size: 14px;
+}
+.testimonials-carousel-items h5 {
+  font-size: 14px;
+  margin: 10px 0;
+}
+.testimonials-carousel-items p {
+  margin: 30px 0 0 0;
+}
+/*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!Contacts!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+.form {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15px;
+}
+.form input {
+  width: 360px;
+  padding: 6px 12px;
+  color: #555;
+  border: 1px solid #ccc;
+}
+.form input:focus {
+  border: 1px solid #000;
+}
+.form label {
+  font-family: 'Open-sans', sans-serif;
+  font-size: 12px;
+  align-self: flex-start;
+}
+.form textarea {
+  width: 750px;
+  padding: 6px 12px;
+  color: #555;
+  border: 1px solid #ccc;
+}
+.form textarea:focus {
+  border: 1px solid #000;
+}
+#submitButton {
+  color: #FFFFFF;
+  background-color: #FCAC45;
+  border: none;
+  padding: 15px 40px;
+  font-family: 'Lato', sans-serif;
+  font-size: 14px;
+  text-transform: uppercase;
+}
+
+
+footer {
+  background-color: #222222;
+  color: #FFFFFF;
+}
+footer p {
+  margin-bottom: 0;
+  padding: 20px 0;
+  font-size: 12px;
+}
+.footer-icons {
+  height: 40px;
+  width: 40px;
+  padding: 4px 5px;
+  margin: 20px 10px 20px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  color: #8c8c8c;
+  border: 2px solid #8c8c8c;
+  border-radius: 50%;
+  transition: all .4s;
+}
+.footer-icons:hover {
+  background-color: #FCAC45;
+  color: #fff;
+  border: 2px solid #FCAC45;
 }
