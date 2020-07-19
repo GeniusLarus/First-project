@@ -46,3 +46,4 @@ $(document).ready(function(){
         items: 1
     });
 });
+console.log(false || '' || undefined || 4 || true || 0)

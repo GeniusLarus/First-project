@@ -254,7 +254,22 @@ header {
 }
 
 /*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
-
+@media (max-width: 769px) {
+  #filter-wrap {
+    display: flex;
+    flex-direction: column;
+  }
+  #filter {
+    flex-direction: column;
+  }
+  #filter li {
+    font-size: 20px;
+    padding-bottom: 10px;
+  }
+  #filter li:before{
+    display: none;
+  }
+}
 /*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!Portfolio!!!!!!!!!!!!!!!!!!!*/
 #filter {
   list-style: none;
@@ -290,7 +305,7 @@ header {
   background-image: linear-gradient(to bottom, rgba(0,0,0,0.8) 0%, rgba(0, 0, 0, 0.73) 17%,rgba(0,0,0,0.66) 35%,rgba(0,0,0,0.55) 62%,rgba(0,0,0,0.4) 100%), url('../img/05.jpg');
 }
 #testimonialsCarousel {
-  width: 750px;
+  max-width: 750px;
 }
 .testimonials-carousel-items {
   color: #FFFFFF;
@@ -307,10 +322,11 @@ header {
 .form {
   display: flex;
   flex-direction: column;
+  align-items: center;
   margin-bottom: 15px;
 }
 .form input {
-  width: 360px;
+  width: 100%;
   padding: 6px 12px;
   color: #555;
   border: 1px solid #ccc;
@@ -323,13 +339,13 @@ header {
   font-size: 12px;
   align-self: flex-start;
 }
-.form textarea {
-  width: 750px;
+#textarea {
+  width: 100%;
   padding: 6px 12px;
   color: #555;
   border: 1px solid #ccc;
 }
-.form textarea:focus {
+#textarea:focus {
   border: 1px solid #000;
 }
 #submitButton {
@@ -370,4 +386,10 @@ footer p {
   background-color: #FCAC45;
   color: #fff;
   border: 2px solid #FCAC45;
+}
+@media (max-width: 400px) {
+  .column {
+    display: flex;
+    flex-direction: column;
+  }
 }
